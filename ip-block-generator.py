@@ -18,7 +18,6 @@ args = parser.parse_args()
 read = True if args.read !=None  else False
 
 inputfile = f"{homedir}/csv/{args.read}" if args.read !=None  else None
-print(args)
 
 def verify_ip_address( start, end ):
 	import socket, struct
@@ -38,9 +37,10 @@ def generate_ip_block(start, end ):
 def write_block(args, str_data, data):
 	if args.write:
 		outfile = args.output if args.output !=None  else args.start
-		f = open(f"{homedir}/output/{outfile}.{assigned}","w")
-		f.write(data)
+		f = open(f"{homedir}/output/{outfile}","w")
+		f.write(str_data)
 		f.close()
+		print(f"[*] Generated {len(data)} IP Adresses. File Written to {homedir}/output/{outfile}")
 	else:
 		print(str_data)
 		print(f"[*] Generated {len(data)} IP Adresses.")

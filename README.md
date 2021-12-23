@@ -46,6 +46,20 @@ Example Output
 
 ```
 
+**Generate a Block Of IP Address based on a Start & End Range and Write it to a file in to ``/output`` directory**
+
+```bash
+python3 ip-block-generator.py -s 5.83.240.0 -e 5.83.255.255 -w true -o myFile.txt 
+
+
+```
+
+Example Output
+```
+[*] Generated 4095 IP Adresses. File Written to /home/kali/scripts/ip-magic/output/myFile.txt
+
+```
+
 
 **Generate IP Blocks for a List of IP ranges**
 
