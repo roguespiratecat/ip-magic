@@ -11,7 +11,7 @@ parser.add_argument('-r','--read',   help='.csv input', type=str)
 parser.add_argument('-w','--write',  help='Write result to File Default: False', default=False)
 parser.add_argument('-s','--start',  help='IP Address that Starts the Block Range', type=str)
 parser.add_argument('-e','--end',    help='IP Address that Ends the Block Range', type=str)
-parser.add_argument('-o','--output', help='File to write to ', type=str)
+parser.add_argument('-o','--output', help='File to write to', type=str)
 
 args = parser.parse_args()
 
