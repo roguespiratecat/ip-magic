@@ -75,7 +75,7 @@ The Output of this command is always written to a file in the output directory t
 
 #### CSV File Processing 
 
-csv files must be stsore in the ```/csv``` directory of this project. If you are planning to read from .csv files
+csv files must be stored in the ```/csv``` directory of this project. If you are planning to read from .csv files
 ensure that the files have the appropriate headers ```start,end,total,assigned,owner```. Below is an example of a valid ```.csv``` file that can be processed by this app. 
 
 **Example CSV File**
