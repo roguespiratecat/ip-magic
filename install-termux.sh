@@ -7,8 +7,8 @@ install() {
     else
         echo "Installing Angry IP Commandline Utility"
         apt update && sudo apt upgrade -y
-        dpkg -i ./core/ipscan_3.7.6_all.deb
-        apt -f install
+        apt-get  install ./core/ipscan_3.7.6_all.deb
+        apt-get -f install
     fi
 }
 
